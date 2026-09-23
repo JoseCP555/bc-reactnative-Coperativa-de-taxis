@@ -1,18 +1,18 @@
 import React from 'react';
-import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
+import { Image, ImageSourcePropType, Pressable, StyleSheet, Text, View } from 'react-native';
 
 type Props = {
   title: string;
   subtitle: string;
   description: string;
-  imageUri: string;
+  imageSource: ImageSourcePropType;
   onPress: () => void;
 };
 
-export function CategoryCard({ title, subtitle, description, imageUri, onPress }: Props): React.JSX.Element {
+export function CategoryCard({ title, subtitle, description, imageSource, onPress }: Props): React.JSX.Element {
   return (
     <View style={styles.card}>
-      <Image source={{ uri: imageUri }} style={styles.image} resizeMode="cover" />
+      <Image source={imageSource} style={styles.image} resizeMode="cover" />
       <View style={styles.content}>
         <Text style={styles.title}>{title}</Text>
         <Text style={styles.subtitle}>{subtitle}</Text>

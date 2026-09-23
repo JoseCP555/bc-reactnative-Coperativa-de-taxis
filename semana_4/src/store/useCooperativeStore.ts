@@ -1,6 +1,6 @@
 import { create } from 'zustand';
-import { initialDrivers } from '../data/mockData';
-import { Driver } from '../types';
+import { initialDrivers } from '../../../semana_2/src/data/mockData';
+import { Driver } from '../../../semana_2/src/types';
 
 type CooperativeState = {
   drivers: Driver[];
@@ -15,15 +15,7 @@ export const useCooperativeStore = create<CooperativeState>((set) => ({
   })),
   toggleDriverStatus: (id) => set((state) => ({
     drivers: state.drivers.map((driver) => driver.id === id
-      ? {
-          ...driver,
-          status: driver.status === 'Disponible'
-            ? 'En viaje'
-            : driver.status === 'En viaje'
-              ? 'Descanso'
-              : 'Disponible'
-        }
+      ? { ...driver, status: driver.status === 'Disponible' ? 'En viaje' : 'Disponible' }
       : driver),
   })),
-
 }));

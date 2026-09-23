@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FlatList, Pressable, SafeAreaView, StyleSheet, Text, TextInput, View } from 'react-native';
-import { useCooperativeStore } from '../store/useCooperativeStore';
+import { useCooperativeStore } from '../../../semana_4/src/store/useCooperativeStore';
 
 export function DriversScreen(): React.JSX.Element {
   const drivers = useCooperativeStore((state) => state.drivers);

@@ -1,6 +1,6 @@
 import React from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { AppNavigator } from './src/navigation/AppNavigator';
+import { AppNavigator } from './semana_3/src/navigation/AppNavigator';
 
 const queryClient = new QueryClient();
 

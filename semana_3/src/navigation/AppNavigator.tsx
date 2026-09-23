@@ -1,9 +1,9 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { HomeScreen } from '../screens/HomeScreen';
-import { DriversScreen } from '../screens/DriversScreen';
-import { TripsScreen } from '../screens/TripsScreen';
+import { HomeScreen } from '../../../semana_1/src/screens/HomeScreen';
+import { DriversScreen } from '../../../semana_2/src/screens/DriversScreen';
+import { TripsScreen } from '../../../semana_5/src/screens/TripsScreen';
 
 export type RootStackParamList = { Inicio: undefined; Conductores: undefined; Viajes: undefined };
 const Stack = createNativeStackNavigator<RootStackParamList>();

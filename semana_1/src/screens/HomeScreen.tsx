@@ -2,16 +2,16 @@ import React from 'react';
 import { Alert, SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { CategoryCard } from '../components/CategoryCard';
-import { useCooperativeStore } from '../store/useCooperativeStore';
-import { RootStackParamList } from '../navigation/AppNavigator';
+import { useCooperativeStore } from '../../../semana_4/src/store/useCooperativeStore';
+import { RootStackParamList } from '../../../semana_3/src/navigation/AppNavigator';
 
 export type HomeProps = NativeStackScreenProps<RootStackParamList, 'Inicio'>;
 
 const cards = [
-  { title: 'Conductores', subtitle: 'Personal de la cooperativa', description: 'Consulta los conductores registrados y su estado actual.', imageUri: 'https://picsum.photos/seed/item1/300/200' },
-  { title: 'Vehículos', subtitle: 'Taxis registrados', description: 'Revisa los vehículos habilitados para prestar el servicio.', imageUri: 'https://picsum.photos/seed/item2/300/200' },
-  { title: 'Viajes', subtitle: 'Servicios realizados', description: 'Consulta los viajes y recorridos gestionados por la cooperativa.', imageUri: 'https://picsum.photos/seed/item3/300/200' },
-  { title: 'Ingresos', subtitle: 'Resumen financiero', description: 'Visualiza la información general de los ingresos del día.', imageUri: 'https://picsum.photos/seed/item4/300/200' },
+  { title: 'Conductores', subtitle: 'Personal de la cooperativa', description: 'Consulta los conductores registrados y su estado actual.', imageSource: require('../../../assets/conductores.png') },
+  { title: 'Vehículos', subtitle: 'Taxis registrados', description: 'Revisa los vehículos habilitados para prestar el servicio.', imageSource: require('../../../assets/vehiculos.png') },
+  { title: 'Viajes', subtitle: 'Servicios realizados', description: 'Consulta los viajes y recorridos gestionados por la cooperativa.', imageSource: require('../../../assets/viajes.png') },
+  { title: 'Ingresos', subtitle: 'Resumen financiero', description: 'Visualiza la información general de los ingresos del día.', imageSource: require('../../../assets/ingresos.png') },
 ];
 
 export function HomeScreen({ navigation }: HomeProps): React.JSX.Element {

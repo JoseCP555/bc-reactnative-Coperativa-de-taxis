@@ -3,4 +3,3 @@ node_modules/
 dist/
 web-build/
 *.log
-node_modules-viejo/

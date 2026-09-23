@@ -1,17 +1,19 @@
 # Cooperativa de Taxis — Semanas 1 a 5
 
-Proyecto educativo de React Native con Expo y TypeScript.
+Este es el mismo proyecto Expo/TypeScript reorganizado por los temas de cada semana. La app sigue siendo una sola aplicación integrada: sus módulos están bajo `semana_1` a `semana_5`, y `App.tsx` los conecta para ejecutar la versión final. No son cinco proyectos duplicados.
 
-## Contenido
-- Semana 1: componentes, `StyleSheet` y Flexbox.
-- Semana 2: `FlatList`, `TextInput`, formularios y estilos.
-- Semana 3: navegación con React Navigation.
-- Semana 4: estado global con Zustand.
-- Semana 5: consultas con TanStack Query mediante un servicio local simulado.
+- `semana_1`: pantalla de inicio, tarjetas y recursos visuales locales.
+- `semana_2`: listado de conductores, formulario y tipos compartidos.
+- `semana_3`: navegación Stack y tipado de rutas.
+- `semana_4`: store global con Zustand.
+- `semana_5`: pantalla de viajes, servicio simulado y TanStack Query.
 
-## Ejecución
-```bash
+## Ejecutar
+Desde esta carpeta raíz:
+
+```powershell
 pnpm install
-pnpm start
+pnpm exec expo start --clear
 ```
-Luego presiona `w` para web o `a` para un emulador Android.
+
+Presiona `w` para abrir en navegador. Se conservó el nombre y la configuración de la app. `node_modules` y `.expo` están excluidos por `.gitignore`.

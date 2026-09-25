@@ -1,12 +1,25 @@
-# Cooperativa de Taxis — proyectos por semana
+# Cooperativa de Taxis — React Native
 
-Cada carpeta `semana_1` a `semana_9` es un proyecto Expo independiente. Entra a la carpeta de la semana que quieras ejecutar y usa:
+Proyecto académico desarrollado con **React Native y Expo**. La aplicación presenta funciones para gestionar información de una cooperativa de taxis, como viajes, conductores y vehículos. El código está organizado en nueve proyectos independientes, uno por cada semana del bootcamp.
 
-```powershell
-pnpm install
-pnpm exec expo start --clear
-```
+## Estructura del repositorio
 
-Se requiere Node.js 22 o compatible y pnpm. Los archivos `pnpm-lock.yaml` pertenecen a cada proyecto. No se incluye `node_modules`; se genera con `pnpm install`.
+Cada carpeta `semana_N` es una app Expo independiente y contiene sus propios archivos de configuración y dependencias:
 
-La semana 9 reúne la aplicación completa. La semana 7 incluye MMKV y para esa parte se requiere un development build de Android; Expo Go no contiene ese módulo nativo.
+- `App.tsx`: punto de entrada de la aplicación.
+- `app.json`: configuración de Expo.
+- `package.json`: dependencias y scripts.
+- `pnpm-lock.yaml`: versiones instaladas de las dependencias.
+- `tsconfig.json`: configuración de TypeScript.
+- `src/`: código fuente y recursos de la semana.
+
+text
+semana_1/
+semana_2/
+semana_3/
+semana_4/
+semana_5/
+semana_6/
+semana_7/
+semana_8/
+semana_9/

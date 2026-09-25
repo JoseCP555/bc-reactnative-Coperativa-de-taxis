@@ -1,7 +1,25 @@
-# Semana 2 · Listas, inputs y estilos
+# Proyecto de la cooperativa · Semana 2: Listas, inputs y estilos
 
-Listado de conductores con FlatList, búsqueda, inputs controlados, estados y estilos adaptados a la cooperativa.
+Se agrega una lista FlatList filtrable, input de búsqueda, altas sencillas y cambio de estado de conductor.
 
-- Código: `src/screens/DriversScreen.tsx`, `src/data/mockData.ts`, `src/types/index.ts`.
-- Prueba: busca, cambia estado y revisa datos vacíos.
-- En semanas 6–7 este módulo se amplía con formularios validados y caché offline, conservando la entidad Driver. Si una operación falla por red, se permite guardarla localmente, pero no existe cola para sincronizarla luego.
+## Alcance de este punto de control
+Esta app está pensada como una versión incremental de la app de la semana anterior. No es una copia idéntica de la app final en todas las semanas. El starter de la semana 9 toma como base la app integrada publicada por Jose y contiene el acumulado final.
+
+## Ejecutar
+Abre una terminal EN ESTA carpeta (`3-proyecto/starter`) y ejecuta:
+
+```powershell
+pnpm install
+pnpm exec expo start --clear
+```
+
+Pulsa `w` para abrir la versión web. Para validar TypeScript:
+
+```powershell
+pnpm typecheck
+```
+
+Cada semana tiene su propio `package.json`, lockfile y recursos locales. No requiere imports fuera de esta carpeta. No copies `node_modules`, cachés Expo, archivos `.env` ni credenciales al entregar.
+
+## Verificación de la semana
+Usa la lista de teoría y las prácticas de esta carpeta; revisa el flujo principal, entradas vacías/incorrectas y el caso correcto en el simulador.

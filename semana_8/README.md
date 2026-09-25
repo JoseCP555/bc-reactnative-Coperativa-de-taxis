@@ -1,7 +1,25 @@
-# Semana 8 · Autenticación
+# Proyecto de la cooperativa · Semana 8: Autenticación
 
-Login con React Hook Form + Zod contra DummyJSON; Zustand persiste solo el perfil en una capa SecureStore, y los access/refresh tokens se guardan por separado en SecureStore. Axios agrega Bearer y renueva ante 401. Navegación condicional protege la app.
+Se añade acceso, alta demostrativa, perfil y cierre de sesión. Los campos inician vacíos; el login del starter integrado usa el flujo API de práctica, sin credenciales prellenadas.
 
-- Código: `src/services/authApi.ts`, `src/store/useAuthStore.ts`, `src/screens/AuthScreen.tsx`, `src/screens/ProfileScreen.tsx`.
-- Credenciales públicas de práctica: `emilys` / `emilyspass`.
-- Registro de DummyJSON y OAuth requieren configuración y tienen límites descritos en `docs/ALCANCE_Y_LIMITACIONES.md`.
+## Alcance de este punto de control
+Esta app está pensada como una versión incremental de la app de la semana anterior. No es una copia idéntica de la app final en todas las semanas. El starter de la semana 9 toma como base la app integrada publicada por Jose y contiene el acumulado final.
+
+## Ejecutar
+Abre una terminal EN ESTA carpeta (`3-proyecto/starter`) y ejecuta:
+
+```powershell
+pnpm install
+pnpm exec expo start --clear
+```
+
+Pulsa `w` para abrir la versión web. Para validar TypeScript:
+
+```powershell
+pnpm typecheck
+```
+
+Cada semana tiene su propio `package.json`, lockfile y recursos locales. No requiere imports fuera de esta carpeta. No copies `node_modules`, cachés Expo, archivos `.env` ni credenciales al entregar.
+
+## Verificación de la semana
+Usa la lista de teoría y las prácticas de esta carpeta; revisa el flujo principal, entradas vacías/incorrectas y el caso correcto en el simulador.

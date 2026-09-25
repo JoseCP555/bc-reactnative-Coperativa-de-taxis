@@ -1,7 +1,25 @@
-# Semana 1 · Componentes y Flexbox
+# Proyecto de la cooperativa · Semana 1: Componentes principales y Flexbox
 
-Punto de entrada visual de la Cooperativa de Taxis. La pantalla inicial usa componentes nativos, tarjetas, imágenes locales y distribución Flexbox.
+Inicio con tarjetas e imágenes locales. Navega con componentes básicos, estilos y Flexbox; las tarjetas aún son demostrativas.
 
-- Código: `src/screens/HomeScreen.tsx`, `src/components/CategoryCard.tsx`, `src/components/StatCard.tsx`.
-- Prueba: abre el inicio y entra a Conductores o Viajes desde sus tarjetas.
-- Extensión: las tarjetas reciben animación de entrada desde semana 9 sin reemplazar los recursos visuales.
+## Alcance de este punto de control
+Esta app está pensada como una versión incremental de la app de la semana anterior. No es una copia idéntica de la app final en todas las semanas. El starter de la semana 9 toma como base la app integrada publicada por Jose y contiene el acumulado final.
+
+## Ejecutar
+Abre una terminal EN ESTA carpeta (`3-proyecto/starter`) y ejecuta:
+
+```powershell
+pnpm install
+pnpm exec expo start --clear
+```
+
+Pulsa `w` para abrir la versión web. Para validar TypeScript:
+
+```powershell
+pnpm typecheck
+```
+
+Cada semana tiene su propio `package.json`, lockfile y recursos locales. No requiere imports fuera de esta carpeta. No copies `node_modules`, cachés Expo, archivos `.env` ni credenciales al entregar.
+
+## Verificación de la semana
+Usa la lista de teoría y las prácticas de esta carpeta; revisa el flujo principal, entradas vacías/incorrectas y el caso correcto en el simulador.

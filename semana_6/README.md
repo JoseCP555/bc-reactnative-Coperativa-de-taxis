@@ -1,6 +1,25 @@
-# Semana 6 · Formularios con React Hook Form + Zod
+# Proyecto de la cooperativa · Semana 6: Formularios y validación
 
-Formularios tipados con `useForm`, `Controller`, `zodResolver` y mensajes inline. Conductores permite crear y editar usando `defaultValues`; Viajes valida origen, destino, conductor y tarifa.
+Se añaden reglas Zod, formulario de conductor y validación de campos antes de aceptar el viaje.
 
-- Código reutilizable: `src/components/Field.tsx`, `src/validation/schemas.ts`, `src/components/PrimaryButton.tsx`.
-- Prueba: envía campos vacíos, corrige errores, guarda un conductor y edítalo.
+## Alcance de este punto de control
+Esta app está pensada como una versión incremental de la app de la semana anterior. No es una copia idéntica de la app final en todas las semanas. El starter de la semana 9 toma como base la app integrada publicada por Jose y contiene el acumulado final.
+
+## Ejecutar
+Abre una terminal EN ESTA carpeta (`3-proyecto/starter`) y ejecuta:
+
+```powershell
+pnpm install
+pnpm exec expo start --clear
+```
+
+Pulsa `w` para abrir la versión web. Para validar TypeScript:
+
+```powershell
+pnpm typecheck
+```
+
+Cada semana tiene su propio `package.json`, lockfile y recursos locales. No requiere imports fuera de esta carpeta. No copies `node_modules`, cachés Expo, archivos `.env` ni credenciales al entregar.
+
+## Verificación de la semana
+Usa la lista de teoría y las prácticas de esta carpeta; revisa el flujo principal, entradas vacías/incorrectas y el caso correcto en el simulador.

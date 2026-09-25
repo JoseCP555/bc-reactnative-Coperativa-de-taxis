@@ -1,41 +1,12 @@
-# Cooperativa de Taxis
+# Cooperativa de Taxis — proyectos por semana
 
-Aplicación educativa desarrollada con **Expo, React Native y TypeScript** para practicar la creación progresiva de una app de gestión para una cooperativa de taxis.
+Cada carpeta `semana_1` a `semana_9` es un proyecto Expo independiente. Entra a la carpeta de la semana que quieras ejecutar y usa:
 
-El proyecto conserva una sola aplicación integrada. Las carpetas `semana_1` a `semana_9` organizan el código y los aprendizajes de cada etapa; **no son nueve aplicaciones independientes**.
+```powershell
+pnpm install
+pnpm exec expo start --clear
+```
 
-## Objetivo
+Se requiere Node.js 22 o compatible y pnpm. Los archivos `pnpm-lock.yaml` pertenecen a cada proyecto. No se incluye `node_modules`; se genera con `pnpm install`.
 
-Construir una aplicación móvil que reúna módulos básicos para consultar conductores, registrar viajes y administrar vehículos, aplicando progresivamente los temas estudiados durante el curso.
-
-## Funcionalidades principales
-
-- Pantalla de inicio con acceso a los módulos.
-- Consulta y gestión educativa de conductores.
-- Registro y consulta de viajes.
-- Registro local de vehículos, con opciones para agregar, editar, cambiar su estado y eliminar.
-- Resumen de ingresos calculado a partir de las tarifas de los viajes disponibles.
-- Preferencias y almacenamiento local.
-- Pantallas de autenticación y perfil para fines de demostración.
-- Ejemplos de navegación, formularios, validación, manejo de datos y animaciones.
-
-## Organización del proyecto
-
-text
-.
-├── App.tsx
-├── app.json
-├── package.json
-├── assets/
-├── docs/
-├── semana_1/
-├── semana_2/
-├── semana_3/
-├── semana_4/
-├── semana_5/
-├── semana_6/
-├── semana_7/
-├── semana_8/
-├── semana_9/
-├── GUIA_ENTREGA_SEMANAS_1_A_9.md
-└── README.md
+La semana 9 reúne la aplicación completa. La semana 7 incluye MMKV y para esa parte se requiere un development build de Android; Expo Go no contiene ese módulo nativo.

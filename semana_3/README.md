@@ -1,7 +1,25 @@
-# Semana 3 · React Navigation
+# Proyecto de la cooperativa · Semana 3: React Navigation
 
-Stack Navigator tipado para Inicio, Conductores, Viajes, Perfil, Preferencias y Animaciones.
+Se introduce navegación stack tipada, lista de conductores y pantalla de detalle con parámetros.
 
-- Código: `src/navigation/AppNavigator.tsx`.
-- Prueba: navega entre cada pantalla y usa el cierre de sesión para volver al acceso.
-- Las rutas protegidas se muestran solo cuando existe una sesión.
+## Alcance de este punto de control
+Esta app está pensada como una versión incremental de la app de la semana anterior. No es una copia idéntica de la app final en todas las semanas. El starter de la semana 9 toma como base la app integrada publicada por Jose y contiene el acumulado final.
+
+## Ejecutar
+Abre una terminal EN ESTA carpeta (`3-proyecto/starter`) y ejecuta:
+
+```powershell
+pnpm install
+pnpm exec expo start --clear
+```
+
+Pulsa `w` para abrir la versión web. Para validar TypeScript:
+
+```powershell
+pnpm typecheck
+```
+
+Cada semana tiene su propio `package.json`, lockfile y recursos locales. No requiere imports fuera de esta carpeta. No copies `node_modules`, cachés Expo, archivos `.env` ni credenciales al entregar.
+
+## Verificación de la semana
+Usa la lista de teoría y las prácticas de esta carpeta; revisa el flujo principal, entradas vacías/incorrectas y el caso correcto en el simulador.

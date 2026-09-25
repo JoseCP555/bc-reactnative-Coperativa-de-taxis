@@ -1,6 +1,7 @@
-# Semana 1 — Componentes y Flexbox
+# Semana 1 · Componentes y Flexbox
 
-Código original reubicado aquí: `src/screens/HomeScreen.tsx`, `src/components/CategoryCard.tsx` y `src/components/StatCard.tsx`. Esta parte presenta los módulos de la cooperativa, sus tarjetas, imágenes, estructura y estilos.
+Punto de entrada visual de la Cooperativa de Taxis. La pantalla inicial usa componentes nativos, tarjetas, imágenes locales y distribución Flexbox.
 
-Las imágenes de las tarjetas ahora son archivos locales en `assets/`; ya no dependen de una URL aleatoria.
-La aplicación final usa todos estos módulos juntos. Ejecuta `pnpm install` y `pnpm exec expo start --clear` desde la carpeta raíz del proyecto.
+- Código: `src/screens/HomeScreen.tsx`, `src/components/CategoryCard.tsx`, `src/components/StatCard.tsx`.
+- Prueba: abre el inicio y entra a Conductores o Viajes desde sus tarjetas.
+- Extensión: las tarjetas reciben animación de entrada desde semana 9 sin reemplazar los recursos visuales.

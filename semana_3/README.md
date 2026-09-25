@@ -1,5 +1,7 @@
-# Semana 3 — Navegación
+# Semana 3 · React Navigation
 
-Código original reubicado aquí: `src/navigation/AppNavigator.tsx`. Configura la navegación Stack entre Inicio, Conductores y Viajes, y tipa sus rutas.
+Stack Navigator tipado para Inicio, Conductores, Viajes, Perfil, Preferencias y Animaciones.
 
-La aplicación final usa todos estos módulos juntos. Ejecuta `pnpm install` y `pnpm exec expo start --clear` desde la carpeta raíz del proyecto.
+- Código: `src/navigation/AppNavigator.tsx`.
+- Prueba: navega entre cada pantalla y usa el cierre de sesión para volver al acceso.
+- Las rutas protegidas se muestran solo cuando existe una sesión.

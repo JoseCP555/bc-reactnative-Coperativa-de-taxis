@@ -1,4 +1,7 @@
-# Semana 4 — Estado global con Zustand
+# Semana 4 · Estado global con Zustand
 
-Código original reubicado aquí: `src/store/useCooperativeStore.ts`. Mantiene la lista de conductores y las acciones para agregar y cambiar el estado. Consume los datos iniciales definidos junto al módulo de conductores de Semana 2.
+El store Zustand de la cooperativa centraliza conductores y sus acciones; las pantallas consumen el mismo estado.
 
+- Código: `src/store/useCooperativeStore.ts`.
+- Prueba: cambia el estado de un conductor y verifica el resumen del Inicio.
+- La persistencia de la lista se incorpora en semana 7 mediante una capa AsyncStorage.

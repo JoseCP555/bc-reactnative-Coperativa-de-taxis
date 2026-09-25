@@ -1,5 +1,7 @@
-# Semana 2 — Listas, inputs y estilos
+# Semana 2 · Listas, inputs y estilos
 
-Código original reubicado aquí: `src/screens/DriversScreen.tsx`, `src/types/index.ts` y los datos iniciales en `src/data/mockData.ts`. Incluye la lista FlatList, formulario de conductores, TextInput, datos de prueba y estilos.
+Listado de conductores con FlatList, búsqueda, inputs controlados, estados y estilos adaptados a la cooperativa.
 
-La app integrada también usa el store de Zustand de Semana 4 para conservar los conductores en el estado global. Ejecuta la app desde la raíz del proyecto.
+- Código: `src/screens/DriversScreen.tsx`, `src/data/mockData.ts`, `src/types/index.ts`.
+- Prueba: busca, cambia estado y revisa datos vacíos.
+- En semanas 6–7 este módulo se amplía con formularios validados y caché offline, conservando la entidad Driver. Si una operación falla por red, se permite guardarla localmente, pero no existe cola para sincronizarla luego.

@@ -1,47 +1,41 @@
-# Cooperativa de Taxis · Semanas 1 a 9
+# Cooperativa de Taxis
 
-Proyecto Expo + React Native + TypeScript, basado en el código de la cooperativa que ya estaba organizado en semanas 1–5. Se conserva como **una sola app integrada**; cada carpeta `semana_N` muestra el módulo que se estudia en esa etapa.
+Aplicación educativa desarrollada con **Expo, React Native y TypeScript** para practicar la creación progresiva de una app de gestión para una cooperativa de taxis.
 
-## Ejecutar
+El proyecto conserva una sola aplicación integrada. Las carpetas `semana_1` a `semana_9` organizan el código y los aprendizajes de cada etapa; **no son nueve aplicaciones independientes**.
 
-Requisitos del temario: Node.js 22+, pnpm y VS Code.
+## Objetivo
 
-```powershell
-pnpm install
-pnpm exec expo start --clear
-```
+Construir una aplicación móvil que reúna módulos básicos para consultar conductores, registrar viajes y administrar vehículos, aplicando progresivamente los temas estudiados durante el curso.
 
-Pulsa `w` para abrir la versión web. Para comprobar tipos:
+## Funcionalidades principales
 
-```powershell
-pnpm typecheck
-```
+- Pantalla de inicio con acceso a los módulos.
+- Consulta y gestión educativa de conductores.
+- Registro y consulta de viajes.
+- Registro local de vehículos, con opciones para agregar, editar, cambiar su estado y eliminar.
+- Resumen de ingresos calculado a partir de las tarifas de los viajes disponibles.
+- Preferencias y almacenamiento local.
+- Pantallas de autenticación y perfil para fines de demostración.
+- Ejemplos de navegación, formularios, validación, manejo de datos y animaciones.
 
-La semana 7 usa MMKV en iOS/Android y por eso requiere un development build; Expo Go no incluye ese módulo nativo. Desde un equipo configurado para Android puedes usar `pnpm android:native`. En web hay un adaptador de preferencias local. Puedes probar el fallback offline con `EXPO_PUBLIC_USE_MOCK_API=false` y sin configurar una API real.
+## Organización del proyecto
 
-## Carpetas
-
-| Carpeta | Contenido |
-|---|---|
-| `semana_1` | Inicio, tarjetas y recursos de la cooperativa |
-| `semana_2` | Conductores, listas, búsqueda y tipos del dominio |
-| `semana_3` | Navegación Stack y rutas tipadas |
-| `semana_4` | Estado global con Zustand |
-| `semana_5` | Axios, adaptador REST educativo, TanStack Query y viajes |
-| `semana_6` | Formularios reutilizables, React Hook Form y Zod; crear/editar conductores |
-| `semana_7` | MMKV para preferencias, AsyncStorage para caché offline y SecureStore para datos sensibles |
-| `semana_8` | Login, registro de demostración, SecureStore, refresh 401 y OAuth PKCE opcional |
-| `semana_9` | Animated API, interpolación, spring/decay y LayoutAnimation |
-
-## Acceso de práctica
-
-- Usuario: `emilys`
-- Contraseña: `emilyspass`
-
-El login consulta DummyJSON. El API de taxis es un adaptador local de demostración, no un backend real. El alta en `/users/add` de DummyJSON también es de demostración y no crea una cuenta persistente. Consulta `docs/ALCANCE_Y_LIMITACIONES.md`.
-
-## Material de apoyo
-
-- `GUIA_ENTREGA_SEMANAS_1_A_9.md`: objetivos, recorridos y evidencias para verificar manualmente.
-- Cada carpeta semanal tiene su propio `README.md`.
-- `docs/MMKV_EJEMPLO_NATIVO.md`: requisito del build nativo para MMKV.
+text
+.
+├── App.tsx
+├── app.json
+├── package.json
+├── assets/
+├── docs/
+├── semana_1/
+├── semana_2/
+├── semana_3/
+├── semana_4/
+├── semana_5/
+├── semana_6/
+├── semana_7/
+├── semana_8/
+├── semana_9/
+├── GUIA_ENTREGA_SEMANAS_1_A_9.md
+└── README.md
